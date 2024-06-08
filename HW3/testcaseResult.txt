@@ -1,0 +1,21 @@
+<open2>
+function = 19
+operator = 34
+int = 17
+char = 0
+pointer = 0
+array = 4
+selection = 2
+loop = 6
+return = 2
+
+<open3>
+function = 24
+operator = 27
+int = 13
+char = 0
+pointer = 0
+array = 0
+selection = 11
+loop = 1
+return = 6

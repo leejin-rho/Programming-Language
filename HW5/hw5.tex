@@ -1,0 +1,258 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{kotex}
+\usepackage{amsmath}
+\usepackage{kmath}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{subfigure}
+\usepackage[a4paper,left=26mm,right=26mm,top=27mm,bottom=27mm]{geometry}
+
+
+\title{Programming Language hw5}
+\author{B811056 노이진}
+\date{May 2021}
+
+\begin{document}
+
+\maketitle
+
+\section{hanoi}
+과제에 대한 설명은 코드 내에 주석으로 적었습니다.
+\subsection{code}
+\begin{lstlisting}[escapeinside=``]
+hanoi(X) :- move(X,1,2,3).
+%` 하노이를 호출하면 move함수를 호출.`
+
+move(0,_,_,_) :- !.
+%` N이 1일 경우 M이 0이 되며 이때는 옮길 원판이 없다는 의미가(한개만 있을 경우 옮길 필요x) 되어 재귀를 멈춰줘야하므로 !를 이용해 cut.`
+move(N,X,Y,Z) :-
+	M is N-1,
+	move(M,X,Z,Y),  % `N-1개의 원판을 X번에서 Z번으로 옮긴다`
+	print_h(X,Y,N), % `N번째 원반을 목적지로 옮긴다(여기서 print를 해줘서 표현. 
+	                    재귀가 되면 N은 N-1이 되므로 N이 0이 되면 cut이 된 후 순차적으로 print될 것이다.)`
+	move(M,Z,Y,X).  % `다시 N-1개의 원판을 Z번에서 Y번으로 옮긴다`
+	
+print_h(X,Y,N) :-
+	write(N), write(' -> ['), write(X), write(','), write(Y), write(']'), nl.
+% `재귀의 레벨이 되는 N이 몇번째 board를 움직이는지 나타낼 수 있으므로 그대로 write을 이용해 print해준다.`
+\end{lstlisting}
+\subsection{trace}
+\begin{lstlisting}[escapeinside=``]
+?- trace.
+true.
+
+[trace]  ?- hanoi(3).
+   Call: (10) hanoi(3) ? creep
+   Call: (11) move(3, 1, 2, 3) ? creep
+   Call: (12) _7462 is 3+ -1 ? creep
+   Exit: (12) 2 is 3+ -1 ? creep
+   Call: (12) move(2, 1, 3, 2) ? creep
+   Call: (13) _7600 is 2+ -1 ? creep
+   Exit: (13) 1 is 2+ -1 ? creep
+   Call: (13) move(1, 1, 2, 3) ? creep
+   Call: (14) _7738 is 1+ -1 ? creep
+   Exit: (14) 0 is 1+ -1 ? creep
+   Call: (14) move(0, 1, 3, 2) ? creep
+   Exit: (14) move(0, 1, 3, 2) ? creep
+   Call: (14) print_h(1, 2, 1) ? creep
+   Call: (15) write(1) ? creep
+1
+   Exit: (15) write(1) ? creep
+   Call: (15) write(' -> [') ? creep
+ -> [
+   Exit: (15) write(' -> [') ? creep
+   Call: (15) write(1) ? creep
+1
+   Exit: (15) write(1) ? creep
+   Call: (15) write(',') ? creep
+,
+   Exit: (15) write(',') ? creep
+   Call: (15) write(2) ? creep
+2
+   Exit: (15) write(2) ? creep
+   Call: (15) write(']') ? creep
+]
+   Exit: (15) write(']') ? creep
+   Call: (15) nl ? creep
+
+   Exit: (15) nl ? creep
+   Exit: (14) print_h(1, 2, 1) ? creep
+   Call: (14) move(0, 3, 2, 1) ? creep
+   Exit: (14) move(0, 3, 2, 1) ? creep
+   Exit: (13) move(1, 1, 2, 3) ? creep
+   Call: (13) print_h(1, 3, 2) ? creep
+   Call: (14) write(2) ? creep
+2
+   Exit: (14) write(2) ? creep
+   Call: (14) write(' -> [') ? creep
+ -> [
+   Exit: (14) write(' -> [') ? creep
+   Call: (14) write(1) ? creep
+1
+   Exit: (14) write(1) ? creep
+   Call: (14) write(',') ? creep
+,
+   Exit: (14) write(',') ? creep
+   Call: (14) write(3) ? creep
+3
+   Exit: (14) write(3) ? creep
+   Call: (14) write(']') ? creep
+]
+   Exit: (14) write(']') ? creep
+   Call: (14) nl ? creep
+
+   Exit: (14) nl ? creep
+   Exit: (13) print_h(1, 3, 2) ? creep
+   Call: (13) move(1, 2, 3, 1) ? creep
+   Call: (14) _9504 is 1+ -1 ? creep
+   Exit: (14) 0 is 1+ -1 ? creep
+   Call: (14) move(0, 2, 1, 3) ? creep
+   Exit: (14) move(0, 2, 1, 3) ? creep
+   Call: (14) print_h(2, 3, 1) ? creep
+   Call: (15) write(1) ? creep
+1
+   Exit: (15) write(1) ? creep
+   Call: (15) write(' -> [') ? creep
+ -> [
+   Exit: (15) write(' -> [') ? creep
+   Call: (15) write(2) ? creep
+2
+   Exit: (15) write(2) ? creep
+   Call: (15) write(',') ? creep
+,
+   Exit: (15) write(',') ? creep
+   Call: (15) write(3) ? creep
+3
+   Exit: (15) write(3) ? creep
+   Call: (15) write(']') ? creep
+]
+   Exit: (15) write(']') ? creep
+   Call: (15) nl ? creep
+
+   Exit: (15) nl ? creep
+   Exit: (14) print_h(2, 3, 1) ? creep
+   Call: (14) move(0, 1, 3, 2) ? creep
+   Exit: (14) move(0, 1, 3, 2) ? creep
+   Exit: (13) move(1, 2, 3, 1) ? creep
+   Exit: (12) move(2, 1, 3, 2) ? creep
+   Call: (12) print_h(1, 2, 3) ? creep
+   Call: (13) write(3) ? creep
+3
+   Exit: (13) write(3) ? creep
+   Call: (13) write(' -> [') ? creep
+ -> [
+   Exit: (13) write(' -> [') ? creep
+   Call: (13) write(1) ? creep
+1
+   Exit: (13) write(1) ? creep
+   Call: (13) write(',') ? creep
+,
+   Exit: (13) write(',') ? creep
+   Call: (13) write(2) ? creep
+2
+   Exit: (13) write(2) ? creep
+   Call: (13) write(']') ? creep
+]
+   Exit: (13) write(']') ? creep
+   Call: (13) nl ? creep
+
+   Exit: (13) nl ? creep
+   Exit: (12) print_h(1, 2, 3) ? creep
+   Call: (12) move(2, 3, 2, 1) ? creep
+   Call: (13) _11314 is 2+ -1 ? creep
+   Exit: (13) 1 is 2+ -1 ? creep
+   Call: (13) move(1, 3, 1, 2) ? creep
+   Call: (14) _11452 is 1+ -1 ? creep
+   Exit: (14) 0 is 1+ -1 ? creep
+   Call: (14) move(0, 3, 2, 1) ? creep
+   Exit: (14) move(0, 3, 2, 1) ? creep
+   Call: (14) print_h(3, 1, 1) ? creep
+   Call: (15) write(1) ? creep
+1
+   Exit: (15) write(1) ? creep
+   Call: (15) write(' -> [') ? creep
+ -> [
+   Exit: (15) write(' -> [') ? creep
+   Call: (15) write(3) ? creep
+3
+   Exit: (15) write(3) ? creep
+   Call: (15) write(',') ? creep
+,
+   Exit: (15) write(',') ? creep
+   Call: (15) write(1) ? creep
+1
+   Exit: (15) write(1) ? creep
+   Call: (15) write(']') ? creep
+]
+   Exit: (15) write(']') ? creep
+   Call: (15) nl ? creep
+
+   Exit: (15) nl ? creep
+   Exit: (14) print_h(3, 1, 1) ? creep
+   Call: (14) move(0, 2, 1, 3) ? creep
+   Exit: (14) move(0, 2, 1, 3) ? creep
+   Exit: (13) move(1, 3, 1, 2) ? creep
+   Call: (13) print_h(3, 2, 2) ? creep
+   Call: (14) write(2) ? creep
+2
+   Exit: (14) write(2) ? creep
+   Call: (14) write(' -> [') ? creep
+ -> [
+   Exit: (14) write(' -> [') ? creep
+   Call: (14) write(3) ? creep
+3
+   Exit: (14) write(3) ? creep
+   Call: (14) write(',') ? creep
+,
+   Exit: (14) write(',') ? creep
+   Call: (14) write(2) ? creep
+2
+   Exit: (14) write(2) ? creep
+   Call: (14) write(']') ? creep
+]
+   Exit: (14) write(']') ? creep
+   Call: (14) nl ? creep
+
+   Exit: (14) nl ? creep
+   Exit: (13) print_h(3, 2, 2) ? creep
+   Call: (13) move(1, 1, 2, 3) ? creep
+   Call: (14) _13218 is 1+ -1 ? creep
+   Exit: (14) 0 is 1+ -1 ? creep
+   Call: (14) move(0, 1, 3, 2) ? creep
+   Exit: (14) move(0, 1, 3, 2) ? creep
+   Call: (14) print_h(1, 2, 1) ? creep
+   Call: (15) write(1) ? creep
+1
+   Exit: (15) write(1) ? creep
+   Call: (15) write(' -> [') ? creep
+ -> [
+   Exit: (15) write(' -> [') ? creep
+   Call: (15) write(1) ? creep
+1
+   Exit: (15) write(1) ? creep
+   Call: (15) write(',') ? creep
+,
+   Exit: (15) write(',') ? creep
+   Call: (15) write(2) ? creep
+2
+   Exit: (15) write(2) ? creep
+   Call: (15) write(']') ? creep
+]
+   Exit: (15) write(']') ? creep
+   Call: (15) nl ? creep
+
+   Exit: (15) nl ? creep
+   Exit: (14) print_h(1, 2, 1) ? creep
+   Call: (14) move(0, 3, 2, 1) ? creep
+   Exit: (14) move(0, 3, 2, 1) ? creep
+   Exit: (13) move(1, 1, 2, 3) ? creep
+   Exit: (12) move(2, 3, 2, 1) ? creep
+   Exit: (11) move(3, 1, 2, 3) ? creep
+   Exit: (10) hanoi(3) ? creep
+true.
+
+\end{lstlisting}
+
+
+\end{document}

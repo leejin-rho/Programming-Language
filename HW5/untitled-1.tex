@@ -1,0 +1,323 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{kotex}
+\usepackage{amsmath}
+\usepackage{kmath}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{subfigure}
+\usepackage[a4paper,left=26mm,right=26mm,top=27mm,bottom=27mm]{geometry}
+
+
+\title{Programming Language hw5}
+\author{B811056 노이진}
+\date{May 2021}
+
+\begin{document}
+
+\maketitle
+
+\section{hanoi}
+과제에 대한 설명은 코드 내에 주석으로 적었습니다.
+\subsection{code}
+\begin{lstlisting}[escapeinside=``]
+hanoi(X) :- move(X,1,2,3).
+%` 하노이를 호출하면 move함수를 호출.`
+
+move(0,_,_,_) :- !.
+%` N이 1일 경우 M이 0이 되며 이때는 옮길 원판이 없다는 의미가(한개만 있을 경우 옮길 필요x) 되어 재귀를 멈춰줘야하므로 !를 이용해 cut.`
+move(N,X,Y,Z) :-
+	M is N-1,
+	move(M,X,Z,Y),  % `N-1개의 원판을 X번에서 Z번으로 옮긴다`
+	print_h(X,Y,N), % `N번째 원반을 목적지로 옮긴다(여기서 print를 해줘서 표현. 
+	                    재귀가 되면 N은 N-1이 되므로 N이 0이 되면 cut이 된 후 순차적으로 print될 것이다.)`
+	move(M,Z,Y,X).  % `다시 N-1개의 원판을 Z번에서 Y번으로 옮긴다`
+	
+print_h(X,Y,N) :-
+	write(N), write(' -> ['), write(X), write(','), write(Y), write(']'), nl.
+% `재귀의 레벨이 되는 N이 몇번째 board를 움직이는지 나타낼 수 있으므로 그대로 write을 이용해 print해준다.`
+\end{lstlisting}
+\subsection{trace}
+\begin{lstlisting}[escapeinside=``]
+?- trace.
+true.
+
+[trace]  ?- hanoi(3).
+   Call: (10) hanoi(3) ? creep
+   Call: (11) move(3, 1, 2, 3) ? creep
+   Call: (12) _7462 is 3+ -1 ? creep
+   Exit: (12) 2 is 3+ -1 ? creep
+   Call: (12) move(2, 1, 3, 2) ? creep
+   Call: (13) _7600 is 2+ -1 ? creep
+   Exit: (13) 1 is 2+ -1 ? creep
+   Call: (13) move(1, 1, 2, 3) ? creep
+   Call: (14) _7738 is 1+ -1 ? creep
+   Exit: (14) 0 is 1+ -1 ? creep
+   Call: (14) move(0, 1, 3, 2) ? creep
+   Exit: (14) move(0, 1, 3, 2) ? creep
+   Call: (14) print_h(1, 2, 1) ? creep
+   Call: (15) write(1) ? creep
+1
+   Exit: (15) write(1) ? creep
+   Call: (15) write(' -> [') ? creep
+ -> [
+   Exit: (15) write(' -> [') ? creep
+   Call: (15) write(1) ? creep
+1
+   Exit: (15) write(1) ? creep
+   Call: (15) write(',') ? creep
+,
+   Exit: (15) write(',') ? creep
+   Call: (15) write(2) ? creep
+2
+   Exit: (15) write(2) ? creep
+   Call: (15) write(']') ? creep
+]
+   Exit: (15) write(']') ? creep
+   Call: (15) nl ? creep
+
+   Exit: (15) nl ? creep
+   Exit: (14) print_h(1, 2, 1) ? creep
+   Call: (14) move(0, 3, 2, 1) ? creep
+   Exit: (14) move(0, 3, 2, 1) ? creep
+   Exit: (13) move(1, 1, 2, 3) ? creep
+   Call: (13) print_h(1, 3, 2) ? creep
+   Call: (14) write(2) ? creep
+2
+   Exit: (14) write(2) ? creep
+   Call: (14) write(' -> [') ? creep
+ -> [
+   Exit: (14) write(' -> [') ? creep
+   Call: (14) write(1) ? creep
+1
+   Exit: (14) write(1) ? creep
+   Call: (14) write(',') ? creep
+,
+   Exit: (14) write(',') ? creep
+   Call: (14) write(3) ? creep
+3
+   Exit: (14) write(3) ? creep
+   Call: (14) write(']') ? creep
+]
+   Exit: (14) write(']') ? creep
+   Call: (14) nl ? creep
+
+   Exit: (14) nl ? creep
+   Exit: (13) print_h(1, 3, 2) ? creep
+   Call: (13) move(1, 2, 3, 1) ? creep
+   Call: (14) _9504 is 1+ -1 ? creep
+   Exit: (14) 0 is 1+ -1 ? creep
+   Call: (14) move(0, 2, 1, 3) ? creep
+   Exit: (14) move(0, 2, 1, 3) ? creep
+   Call: (14) print_h(2, 3, 1) ? creep
+   Call: (15) write(1) ? creep
+1
+   Exit: (15) write(1) ? creep
+   Call: (15) write(' -> [') ? creep
+ -> [
+   Exit: (15) write(' -> [') ? creep
+   Call: (15) write(2) ? creep
+2
+   Exit: (15) write(2) ? creep
+   Call: (15) write(',') ? creep
+,
+   Exit: (15) write(',') ? creep
+   Call: (15) write(3) ? creep
+3
+   Exit: (15) write(3) ? creep
+   Call: (15) write(']') ? creep
+]
+   Exit: (15) write(']') ? creep
+   Call: (15) nl ? creep
+
+   Exit: (15) nl ? creep
+   Exit: (14) print_h(2, 3, 1) ? creep
+   Call: (14) move(0, 1, 3, 2) ? creep
+   Exit: (14) move(0, 1, 3, 2) ? creep
+   Exit: (13) move(1, 2, 3, 1) ? creep
+   Exit: (12) move(2, 1, 3, 2) ? creep
+   Call: (12) print_h(1, 2, 3) ? creep
+   Call: (13) write(3) ? creep
+3
+   Exit: (13) write(3) ? creep
+   Call: (13) write(' -> [') ? creep
+ -> [
+   Exit: (13) write(' -> [') ? creep
+   Call: (13) write(1) ? creep
+1
+   Exit: (13) write(1) ? creep
+   Call: (13) write(',') ? creep
+,
+   Exit: (13) write(',') ? creep
+   Call: (13) write(2) ? creep
+2
+   Exit: (13) write(2) ? creep
+   Call: (13) write(']') ? creep
+]
+   Exit: (13) write(']') ? creep
+   Call: (13) nl ? creep
+
+   Exit: (13) nl ? creep
+   Exit: (12) print_h(1, 2, 3) ? creep
+   Call: (12) move(2, 3, 2, 1) ? creep
+   Call: (13) _11314 is 2+ -1 ? creep
+   Exit: (13) 1 is 2+ -1 ? creep
+   Call: (13) move(1, 3, 1, 2) ? creep
+   Call: (14) _11452 is 1+ -1 ? creep
+   Exit: (14) 0 is 1+ -1 ? creep
+   Call: (14) move(0, 3, 2, 1) ? creep
+   Exit: (14) move(0, 3, 2, 1) ? creep
+   Call: (14) print_h(3, 1, 1) ? creep
+   Call: (15) write(1) ? creep
+1
+   Exit: (15) write(1) ? creep
+   Call: (15) write(' -> [') ? creep
+ -> [
+   Exit: (15) write(' -> [') ? creep
+   Call: (15) write(3) ? creep
+3
+   Exit: (15) write(3) ? creep
+   Call: (15) write(',') ? creep
+,
+   Exit: (15) write(',') ? creep
+   Call: (15) write(1) ? creep
+1
+   Exit: (15) write(1) ? creep
+   Call: (15) write(']') ? creep
+]
+   Exit: (15) write(']') ? creep
+   Call: (15) nl ? creep
+
+   Exit: (15) nl ? creep
+   Exit: (14) print_h(3, 1, 1) ? creep
+   Call: (14) move(0, 2, 1, 3) ? creep
+   Exit: (14) move(0, 2, 1, 3) ? creep
+   Exit: (13) move(1, 3, 1, 2) ? creep
+   Call: (13) print_h(3, 2, 2) ? creep
+   Call: (14) write(2) ? creep
+2
+   Exit: (14) write(2) ? creep
+   Call: (14) write(' -> [') ? creep
+ -> [
+   Exit: (14) write(' -> [') ? creep
+   Call: (14) write(3) ? creep
+3
+   Exit: (14) write(3) ? creep
+   Call: (14) write(',') ? creep
+,
+   Exit: (14) write(',') ? creep
+   Call: (14) write(2) ? creep
+2
+   Exit: (14) write(2) ? creep
+   Call: (14) write(']') ? creep
+]
+   Exit: (14) write(']') ? creep
+   Call: (14) nl ? creep
+
+   Exit: (14) nl ? creep
+   Exit: (13) print_h(3, 2, 2) ? creep
+   Call: (13) move(1, 1, 2, 3) ? creep
+   Call: (14) _13218 is 1+ -1 ? creep
+   Exit: (14) 0 is 1+ -1 ? creep
+   Call: (14) move(0, 1, 3, 2) ? creep
+   Exit: (14) move(0, 1, 3, 2) ? creep
+   Call: (14) print_h(1, 2, 1) ? creep
+   Call: (15) write(1) ? creep
+1
+   Exit: (15) write(1) ? creep
+   Call: (15) write(' -> [') ? creep
+ -> [
+   Exit: (15) write(' -> [') ? creep
+   Call: (15) write(1) ? creep
+1
+   Exit: (15) write(1) ? creep
+   Call: (15) write(',') ? creep
+,
+   Exit: (15) write(',') ? creep
+   Call: (15) write(2) ? creep
+2
+   Exit: (15) write(2) ? creep
+   Call: (15) write(']') ? creep
+]
+   Exit: (15) write(']') ? creep
+   Call: (15) nl ? creep
+
+   Exit: (15) nl ? creep
+   Exit: (14) print_h(1, 2, 1) ? creep
+   Call: (14) move(0, 3, 2, 1) ? creep
+   Exit: (14) move(0, 3, 2, 1) ? creep
+   Exit: (13) move(1, 1, 2, 3) ? creep
+   Exit: (12) move(2, 3, 2, 1) ? creep
+   Exit: (11) move(3, 1, 2, 3) ? creep
+   Exit: (10) hanoi(3) ? creep
+true.
+
+\end{lstlisting}
+\section{quickSort}
+
+\subsection{code}
+\begin{lstlisting}[escapeinside=``]
+`% 해보려고 시도는 해 보았으나 실패했습니다.`
+quickSort([A|B]) :- 
+	partition(A,B,[],[]).
+
+divide([A|list],[B|L],[P],R) :- 
+	A =|= P,    
+	divide(list,L,[P],R).
+divide([A|list],[],[P],list) :-
+	A = P.
+\end{lstlisting}
+
+\% 피봇을 중심으로 왼쪽, 오른쪽 리스트를 만드려고 했으나 빈 리스트 두개에 insert하는 방법
+을 찾지를 못했습니다. 그리고는 partition이라는 재귀함수를 만들어 계속 pivot과 비교한 다음에
+그 값를 왼쪽이라는 리스트와 오른쪽이라는 리스트에 계속 머지시키는 방법을 사용하려 했는데
+그렇게 하는 것을 실패했습니다. 그리고 마지막으로 한 리스트 내에서 pivot보다
+작은 값과 큰 값을 바꿔준 후 그러면 pivot을 중심으로 왼쪽과 오른쪽에 나눠져 있을 것이므로
+이를 pivot을 중심으로 왼쪽과 오른쪽 list를 만들어주려고 했습니다. 그를 위해 만든 함수가 위쪽의 함수인데 이도 그냥 실패했습니다. 그리고 아래쪽의 partition함수는 위의 divide함수와 별개로
+왼쪽 리스트의 헤드와 pivot을 비교하고, 또 그 나머지 list의 헤드를 비교하는 것을 재귀로
+반복해서 값을 나눠보려했는데 잘 안되었습니다.
+
+\begin{lstlisting}[escapeinside=``]
+partition([P],[],[],[]). 
+partition(P,[A|B],[H,L],R) :-
+	H <= P, partition(P,B,L,R),
+partition(P,[A|B],L,[H|R]) :-
+	H > P, partition(P,B,L,R).
+\end{lstlisting}
+\subsection{trace}
+
+\section{nQueen}
+포기했습니다.
+\subsection{code}
+\subsection{trace}
+
+\section{shortest path}
+\begin{lstlisting}[escapeinside=``]
+`% 해보려고 시도는 해 보았으나 실패했습니다.`
+%fact
+near(1,2,6). near(1,3,3).   `% 정해진 길을 작은 숫자를 기준으로 설정해주었습니다.`
+near(2,1,6). near(2,3,2). 
+near(2,4,5).
+near(3,1,3). near(3,4,3).
+near(3,5,4).
+near(4,5,2). near(4,6,3).
+near(5,6,5).
+
+%rule
+edge(X,Y) :- near(X,Y,_).   `%길이 양방향이 되도록 edge라는 함수를 설정해주었습니다.`
+edge(X,Y) :- near(Y,X,_).
+
+path(X,X) :- !. `% 자기가 자기를 가리킬 때는 cut하도록 설정`
+path(X,Y) :- 
+	near(X,Z,_),    `% 길이 Z를 경유하여 Y에 가도록 설정`
+	path(Z,Y).
+	
+sp(X,Y) :- 
+	findall(Y,path(X,Y),L), `% 가장 짧은 길 찾기 전에 일단 모든 경로를 찾아보려했습니다`
+	write(L).
+	
+\end{lstlisting}
+\subsection{code}
+\subsection{trace}
+
+\end{document}

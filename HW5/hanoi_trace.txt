@@ -1,0 +1,212 @@
+?- trace.
+true.
+
+[trace]  ?- hanoi(3).
+   Call: (10) hanoi(3) ? creep
+   Call: (11) move(3, 1, 2, 3) ? creep
+   Call: (12) _7462 is 3+ -1 ? creep
+   Exit: (12) 2 is 3+ -1 ? creep
+   Call: (12) move(2, 1, 3, 2) ? creep
+   Call: (13) _7600 is 2+ -1 ? creep
+   Exit: (13) 1 is 2+ -1 ? creep
+   Call: (13) move(1, 1, 2, 3) ? creep
+   Call: (14) _7738 is 1+ -1 ? creep
+   Exit: (14) 0 is 1+ -1 ? creep
+   Call: (14) move(0, 1, 3, 2) ? creep
+   Exit: (14) move(0, 1, 3, 2) ? creep
+   Call: (14) print_h(1, 2, 1) ? creep
+   Call: (15) write(1) ? creep
+1
+   Exit: (15) write(1) ? creep
+   Call: (15) write(' -> [') ? creep
+ -> [
+   Exit: (15) write(' -> [') ? creep
+   Call: (15) write(1) ? creep
+1
+   Exit: (15) write(1) ? creep
+   Call: (15) write(',') ? creep
+,
+   Exit: (15) write(',') ? creep
+   Call: (15) write(2) ? creep
+2
+   Exit: (15) write(2) ? creep
+   Call: (15) write(']') ? creep
+]
+   Exit: (15) write(']') ? creep
+   Call: (15) nl ? creep
+
+   Exit: (15) nl ? creep
+   Exit: (14) print_h(1, 2, 1) ? creep
+   Call: (14) move(0, 3, 2, 1) ? creep
+   Exit: (14) move(0, 3, 2, 1) ? creep
+   Exit: (13) move(1, 1, 2, 3) ? creep
+   Call: (13) print_h(1, 3, 2) ? creep
+   Call: (14) write(2) ? creep
+2
+   Exit: (14) write(2) ? creep
+   Call: (14) write(' -> [') ? creep
+ -> [
+   Exit: (14) write(' -> [') ? creep
+   Call: (14) write(1) ? creep
+1
+   Exit: (14) write(1) ? creep
+   Call: (14) write(',') ? creep
+,
+   Exit: (14) write(',') ? creep
+   Call: (14) write(3) ? creep
+3
+   Exit: (14) write(3) ? creep
+   Call: (14) write(']') ? creep
+]
+   Exit: (14) write(']') ? creep
+   Call: (14) nl ? creep
+
+   Exit: (14) nl ? creep
+   Exit: (13) print_h(1, 3, 2) ? creep
+   Call: (13) move(1, 2, 3, 1) ? creep
+   Call: (14) _9504 is 1+ -1 ? creep
+   Exit: (14) 0 is 1+ -1 ? creep
+   Call: (14) move(0, 2, 1, 3) ? creep
+   Exit: (14) move(0, 2, 1, 3) ? creep
+   Call: (14) print_h(2, 3, 1) ? creep
+   Call: (15) write(1) ? creep
+1
+   Exit: (15) write(1) ? creep
+   Call: (15) write(' -> [') ? creep
+ -> [
+   Exit: (15) write(' -> [') ? creep
+   Call: (15) write(2) ? creep
+2
+   Exit: (15) write(2) ? creep
+   Call: (15) write(',') ? creep
+,
+   Exit: (15) write(',') ? creep
+   Call: (15) write(3) ? creep
+3
+   Exit: (15) write(3) ? creep
+   Call: (15) write(']') ? creep
+]
+   Exit: (15) write(']') ? creep
+   Call: (15) nl ? creep
+
+   Exit: (15) nl ? creep
+   Exit: (14) print_h(2, 3, 1) ? creep
+   Call: (14) move(0, 1, 3, 2) ? creep
+   Exit: (14) move(0, 1, 3, 2) ? creep
+   Exit: (13) move(1, 2, 3, 1) ? creep
+   Exit: (12) move(2, 1, 3, 2) ? creep
+   Call: (12) print_h(1, 2, 3) ? creep
+   Call: (13) write(3) ? creep
+3
+   Exit: (13) write(3) ? creep
+   Call: (13) write(' -> [') ? creep
+ -> [
+   Exit: (13) write(' -> [') ? creep
+   Call: (13) write(1) ? creep
+1
+   Exit: (13) write(1) ? creep
+   Call: (13) write(',') ? creep
+,
+   Exit: (13) write(',') ? creep
+   Call: (13) write(2) ? creep
+2
+   Exit: (13) write(2) ? creep
+   Call: (13) write(']') ? creep
+]
+   Exit: (13) write(']') ? creep
+   Call: (13) nl ? creep
+
+   Exit: (13) nl ? creep
+   Exit: (12) print_h(1, 2, 3) ? creep
+   Call: (12) move(2, 3, 2, 1) ? creep
+   Call: (13) _11314 is 2+ -1 ? creep
+   Exit: (13) 1 is 2+ -1 ? creep
+   Call: (13) move(1, 3, 1, 2) ? creep
+   Call: (14) _11452 is 1+ -1 ? creep
+   Exit: (14) 0 is 1+ -1 ? creep
+   Call: (14) move(0, 3, 2, 1) ? creep
+   Exit: (14) move(0, 3, 2, 1) ? creep
+   Call: (14) print_h(3, 1, 1) ? creep
+   Call: (15) write(1) ? creep
+1
+   Exit: (15) write(1) ? creep
+   Call: (15) write(' -> [') ? creep
+ -> [
+   Exit: (15) write(' -> [') ? creep
+   Call: (15) write(3) ? creep
+3
+   Exit: (15) write(3) ? creep
+   Call: (15) write(',') ? creep
+,
+   Exit: (15) write(',') ? creep
+   Call: (15) write(1) ? creep
+1
+   Exit: (15) write(1) ? creep
+   Call: (15) write(']') ? creep
+]
+   Exit: (15) write(']') ? creep
+   Call: (15) nl ? creep
+
+   Exit: (15) nl ? creep
+   Exit: (14) print_h(3, 1, 1) ? creep
+   Call: (14) move(0, 2, 1, 3) ? creep
+   Exit: (14) move(0, 2, 1, 3) ? creep
+   Exit: (13) move(1, 3, 1, 2) ? creep
+   Call: (13) print_h(3, 2, 2) ? creep
+   Call: (14) write(2) ? creep
+2
+   Exit: (14) write(2) ? creep
+   Call: (14) write(' -> [') ? creep
+ -> [
+   Exit: (14) write(' -> [') ? creep
+   Call: (14) write(3) ? creep
+3
+   Exit: (14) write(3) ? creep
+   Call: (14) write(',') ? creep
+,
+   Exit: (14) write(',') ? creep
+   Call: (14) write(2) ? creep
+2
+   Exit: (14) write(2) ? creep
+   Call: (14) write(']') ? creep
+]
+   Exit: (14) write(']') ? creep
+   Call: (14) nl ? creep
+
+   Exit: (14) nl ? creep
+   Exit: (13) print_h(3, 2, 2) ? creep
+   Call: (13) move(1, 1, 2, 3) ? creep
+   Call: (14) _13218 is 1+ -1 ? creep
+   Exit: (14) 0 is 1+ -1 ? creep
+   Call: (14) move(0, 1, 3, 2) ? creep
+   Exit: (14) move(0, 1, 3, 2) ? creep
+   Call: (14) print_h(1, 2, 1) ? creep
+   Call: (15) write(1) ? creep
+1
+   Exit: (15) write(1) ? creep
+   Call: (15) write(' -> [') ? creep
+ -> [
+   Exit: (15) write(' -> [') ? creep
+   Call: (15) write(1) ? creep
+1
+   Exit: (15) write(1) ? creep
+   Call: (15) write(',') ? creep
+,
+   Exit: (15) write(',') ? creep
+   Call: (15) write(2) ? creep
+2
+   Exit: (15) write(2) ? creep
+   Call: (15) write(']') ? creep
+]
+   Exit: (15) write(']') ? creep
+   Call: (15) nl ? creep
+
+   Exit: (15) nl ? creep
+   Exit: (14) print_h(1, 2, 1) ? creep
+   Call: (14) move(0, 3, 2, 1) ? creep
+   Exit: (14) move(0, 3, 2, 1) ? creep
+   Exit: (13) move(1, 1, 2, 3) ? creep
+   Exit: (12) move(2, 3, 2, 1) ? creep
+   Exit: (11) move(3, 1, 2, 3) ? creep
+   Exit: (10) hanoi(3) ? creep
+true.

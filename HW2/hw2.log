@@ -1,0 +1,275 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.3.24)  16 APR 2021 21:39
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**hw2.tex
+(./hw2.tex
+LaTeX2e <2020-10-01> patch level 4
+L3 programming layer <2021-02-18>
+(c:/texlive/2020/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
+(c:/texlive/2020/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+)
+\c@part=\count179
+\c@section=\count180
+\c@subsection=\count181
+\c@subsubsection=\count182
+\c@paragraph=\count183
+\c@subparagraph=\count184
+\c@figure=\count185
+\c@table=\count186
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+(c:/texlive/2020/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2020/08/01 v1.3d Input encoding file
+\inpenc@prehook=\toks15
+\inpenc@posthook=\toks16
+)
+(c:/texlive/2020/texmf-dist/tex/latex/cjk-ko/kotex.sty
+Package: kotex 2015/04/19 v1.6 Korean TeX (ko.TeX)
+
+(c:/texlive/2020/texmf-dist/tex/latex/kotex-utf/kotex.cfg)
+(c:/texlive/2020/texmf-dist/tex/latex/kotex-utf/kotexutf.sty
+Package: kotexutf 2015/07/18 v2.1.1 typesetting UTF-8 Korean documents
+
+(c:/texlive/2020/texmf-dist/tex/plain/kotex-plain/kotexutf-core.tex
+\unih@ngulpoint=\count187
+\dhucs@emph@raise=\dimen139
+)
+Now handling font encoding LUC ...
+... processing UTF-8 mapping file for font encoding LUC
+
+(c:/texlive/2020/texmf-dist/tex/latex/kotex-utf/lucenc.dfu
+File: lucenc.dfu 2007/09/05 UTF-8 support for dhucs
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+3001 (decimal 12289)
+   defining Unicode char U+3002 (decimal 12290)
+   defining Unicode char U+3008 (decimal 12296)
+   defining Unicode char U+3009 (decimal 12297)
+   defining Unicode char U+300A (decimal 12298)
+   defining Unicode char U+300B (decimal 12299)
+   defining Unicode char U+300C (decimal 12300)
+   defining Unicode char U+300D (decimal 12301)
+   defining Unicode char U+300E (decimal 12302)
+   defining Unicode char U+300F (decimal 12303)
+   defining Unicode char U+3010 (decimal 12304)
+   defining Unicode char U+3011 (decimal 12305)
+   defining Unicode char U+3014 (decimal 12308)
+   defining Unicode char U+3015 (decimal 12309)
+   defining Unicode char U+3016 (decimal 12310)
+   defining Unicode char U+3017 (decimal 12311)
+   defining Unicode char U+3018 (decimal 12312)
+   defining Unicode char U+3019 (decimal 12313)
+   defining Unicode char U+301A (decimal 12314)
+   defining Unicode char U+301B (decimal 12315)
+   defining Unicode char U+FF01 (decimal 65281)
+   defining Unicode char U+FF08 (decimal 65288)
+   defining Unicode char U+FF09 (decimal 65289)
+   defining Unicode char U+FF0C (decimal 65292)
+   defining Unicode char U+FF0E (decimal 65294)
+   defining Unicode char U+FF1A (decimal 65306)
+   defining Unicode char U+FF1B (decimal 65307)
+   defining Unicode char U+FF1C (decimal 65308)
+   defining Unicode char U+FF1D (decimal 65309)
+   defining Unicode char U+FF1E (decimal 65310)
+   defining Unicode char U+FF1F (decimal 65311)
+   defining Unicode char U+FF3B (decimal 65339)
+   defining Unicode char U+FF3D (decimal 65341)
+   defining Unicode char U+FF5B (decimal 65371)
+   defining Unicode char U+FF5D (decimal 65373)
+   defining Unicode char U+FF61 (decimal 65377)
+   defining Unicode char U+FF62 (decimal 65378)
+   defining Unicode char U+FF63 (decimal 65379)
+   defining Unicode char U+FF64 (decimal 65380)
+   defining Unicode char U+FF65 (decimal 65381)
+)
+\@josa=\count188
+\josatoks=\toks17
+
+(c:/texlive/2020/texmf-dist/tex/latex/cjk-ko/kolabels-utf.sty
+Package: kolabels-utf 2015/03/20 v1.5 UTF-8 Hangul item labels
+)))
+(c:/texlive/2020/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box47
+\UL@hyphenbox=\box48
+\UL@skip=\skip49
+\UL@hook=\toks18
+\UL@height=\dimen140
+\UL@pe=\count189
+\UL@pixel=\dimen141
+\ULC@box=\box49
+Package: ulem 2019/11/18
+\ULdepth=\dimen142
+)
+(c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/09/23 v2.17i AMS math features
+\@mathmargin=\skip50
+
+For additional information on amsmath, use the `?' option.
+(c:/texlive/2020/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks19
+\ex@=\dimen143
+))
+(c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen144
+)
+(c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count190
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count191
+\leftroot@=\count192
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count193
+\DOTSCASE@=\count194
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box50
+\strutbox@=\box51
+\big@size=\dimen145
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count195
+\c@MaxMatrixCols=\count196
+\dotsspace@=\muskip16
+\c@parentequation=\count197
+\dspbrk@lvl=\count198
+\tag@help=\toks20
+\row@=\count199
+\column@=\count266
+\maxfields@=\count267
+\andhelp@=\toks21
+\eqnshift@=\dimen146
+\alignsep@=\dimen147
+\tagshift@=\dimen148
+\tagwidth@=\dimen149
+\totwidth@=\dimen150
+\lineht@=\dimen151
+\@envbody=\toks22
+\multlinegap=\skip51
+\multlinetaggap=\skip52
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2923.
+LaTeX Info: Redefining \] on input line 2924.
+)
+
+! LaTeX Error: File `kmath.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: 
+(c:/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count268
+\l__pdf_internal_box=\box52
+)
+(./hw2.aux)
+\openout1 = `hw2.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for LUC/nanummj/m/n on input line 12.
+LaTeX Font Info:    Trying to load font information for LUC+nanummj on input li
+ne 12.
+ (c:/texlive/2020/texmf-dist/tex/latex/nanumtype1/lucnanummj.fd
+File: lucnanummj.fd 2013/02/12 v0.1 Nanum Myeongjo font definitions
+)
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 3
+2.
+
+(c:/texlive/2020/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 32.
+ [1
+
+{c:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] (./hw2.aux)
+ ) 
+Here is how much of TeX's memory you used:
+ 1609 strings out of 480962
+ 22642 string characters out of 5907968
+ 321366 words of memory out of 5000000
+ 18812 multiletter control sequences out of 15000+600000
+ 421480 words of font info for 90 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 68i,7n,74p,1215b,254s stack positions out of 5000i,500n,10000p,200000b,80000s
+ <c:/Users/tbdpa/.texlive2020/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.
+600pk><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:
+/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2
+020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2020/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2020/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/pu
+blic/nanumtype1/nanummjmac.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/n
+anumtype1/nanummjmad.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/nanumty
+pe1/nanummjmae.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/nanumtype1/na
+nummjmaf.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/nanumtype1/nanummjm
+b0.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb1.pfb
+><c:/texlive/2020/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb2.pfb><c:/t
+exlive/2020/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb3.pfb><c:/texlive
+/2020/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb4.pfb><c:/texlive/2020/
+texmf-dist/fonts/type1/public/nanumtype1/nanummjmb5.pfb><c:/texlive/2020/texmf-
+dist/fonts/type1/public/nanumtype1/nanummjmb6.pfb><c:/texlive/2020/texmf-dist/f
+onts/type1/public/nanumtype1/nanummjmb7.pfb><c:/texlive/2020/texmf-dist/fonts/t
+ype1/public/nanumtype1/nanummjmb8.pfb><c:/texlive/2020/texmf-dist/fonts/type1/p
+ublic/nanumtype1/nanummjmb9.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/
+nanumtype1/nanummjmba.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/nanumt
+ype1/nanummjmbb.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/nanumtype1/n
+anummjmbc.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/nanumtype1/nanummj
+mbd.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbe.pf
+b><c:/texlive/2020/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc0.pfb><c:/
+texlive/2020/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc1.pfb><c:/texliv
+e/2020/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc2.pfb><c:/texlive/2020
+/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc3.pfb><c:/texlive/2020/texmf
+-dist/fonts/type1/public/nanumtype1/nanummjmc4.pfb><c:/texlive/2020/texmf-dist/
+fonts/type1/public/nanumtype1/nanummjmc5.pfb><c:/texlive/2020/texmf-dist/fonts/
+type1/public/nanumtype1/nanummjmc6.pfb><c:/texlive/2020/texmf-dist/fonts/type1/
+public/nanumtype1/nanummjmc7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public
+/nanumtype1/nanummjmc8.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/nanum
+type1/nanummjmc9.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/nanumtype1/
+nanummjmca.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/nanumtype1/nanumm
+jmcc.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcd.p
+fb><c:/texlive/2020/texmf-dist/fonts/type1/public/nanumtype1/nanummjmce.pfb><c:
+/texlive/2020/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcf.pfb><c:/texli
+ve/2020/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd0.pfb><c:/texlive/202
+0/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd1.pfb><c:/texlive/2020/texm
+f-dist/fonts/type1/public/nanumtype1/nanummjmd2.pfb><c:/texlive/2020/texmf-dist
+/fonts/type1/public/nanumtype1/nanummjmd3.pfb><c:/texlive/2020/texmf-dist/fonts
+/type1/public/nanumtype1/nanummjmd4.pfb><c:/texlive/2020/texmf-dist/fonts/type1
+/public/nanumtype1/nanummjmd5.pfb><c:/texlive/2020/texmf-dist/fonts/type1/publi
+c/nanumtype1/nanummjmd6.pfb>
+Output written on hw2.pdf (2 pages, 2012549 bytes).
+PDF statistics:
+ 201 PDF objects out of 1000 (max. 8388607)
+ 148 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -1,0 +1,358 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.3.24)  28 MAY 2021 23:54
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**untitled-1.tex
+(./untitled-1.tex
+LaTeX2e <2020-10-01> patch level 4
+L3 programming layer <2021-02-18>
+(c:/texlive/2020/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
+(c:/texlive/2020/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+)
+\c@part=\count179
+\c@section=\count180
+\c@subsection=\count181
+\c@subsubsection=\count182
+\c@paragraph=\count183
+\c@subparagraph=\count184
+\c@figure=\count185
+\c@table=\count186
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+(c:/texlive/2020/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2020/08/01 v1.3d Input encoding file
+\inpenc@prehook=\toks15
+\inpenc@posthook=\toks16
+)
+(c:/texlive/2020/texmf-dist/tex/latex/cjk-ko/kotex.sty
+Package: kotex 2015/04/19 v1.6 Korean TeX (ko.TeX)
+
+(c:/texlive/2020/texmf-dist/tex/latex/kotex-utf/kotex.cfg)
+(c:/texlive/2020/texmf-dist/tex/latex/kotex-utf/kotexutf.sty
+Package: kotexutf 2015/07/18 v2.1.1 typesetting UTF-8 Korean documents
+
+(c:/texlive/2020/texmf-dist/tex/plain/kotex-plain/kotexutf-core.tex
+\unih@ngulpoint=\count187
+\dhucs@emph@raise=\dimen139
+)
+Now handling font encoding LUC ...
+... processing UTF-8 mapping file for font encoding LUC
+
+(c:/texlive/2020/texmf-dist/tex/latex/kotex-utf/lucenc.dfu
+File: lucenc.dfu 2007/09/05 UTF-8 support for dhucs
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+3001 (decimal 12289)
+   defining Unicode char U+3002 (decimal 12290)
+   defining Unicode char U+3008 (decimal 12296)
+   defining Unicode char U+3009 (decimal 12297)
+   defining Unicode char U+300A (decimal 12298)
+   defining Unicode char U+300B (decimal 12299)
+   defining Unicode char U+300C (decimal 12300)
+   defining Unicode char U+300D (decimal 12301)
+   defining Unicode char U+300E (decimal 12302)
+   defining Unicode char U+300F (decimal 12303)
+   defining Unicode char U+3010 (decimal 12304)
+   defining Unicode char U+3011 (decimal 12305)
+   defining Unicode char U+3014 (decimal 12308)
+   defining Unicode char U+3015 (decimal 12309)
+   defining Unicode char U+3016 (decimal 12310)
+   defining Unicode char U+3017 (decimal 12311)
+   defining Unicode char U+3018 (decimal 12312)
+   defining Unicode char U+3019 (decimal 12313)
+   defining Unicode char U+301A (decimal 12314)
+   defining Unicode char U+301B (decimal 12315)
+   defining Unicode char U+FF01 (decimal 65281)
+   defining Unicode char U+FF08 (decimal 65288)
+   defining Unicode char U+FF09 (decimal 65289)
+   defining Unicode char U+FF0C (decimal 65292)
+   defining Unicode char U+FF0E (decimal 65294)
+   defining Unicode char U+FF1A (decimal 65306)
+   defining Unicode char U+FF1B (decimal 65307)
+   defining Unicode char U+FF1C (decimal 65308)
+   defining Unicode char U+FF1D (decimal 65309)
+   defining Unicode char U+FF1E (decimal 65310)
+   defining Unicode char U+FF1F (decimal 65311)
+   defining Unicode char U+FF3B (decimal 65339)
+   defining Unicode char U+FF3D (decimal 65341)
+   defining Unicode char U+FF5B (decimal 65371)
+   defining Unicode char U+FF5D (decimal 65373)
+   defining Unicode char U+FF61 (decimal 65377)
+   defining Unicode char U+FF62 (decimal 65378)
+   defining Unicode char U+FF63 (decimal 65379)
+   defining Unicode char U+FF64 (decimal 65380)
+   defining Unicode char U+FF65 (decimal 65381)
+)
+\@josa=\count188
+\josatoks=\toks17
+
+(c:/texlive/2020/texmf-dist/tex/latex/cjk-ko/kolabels-utf.sty
+Package: kolabels-utf 2015/03/20 v1.5 UTF-8 Hangul item labels
+)))
+(c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/09/23 v2.17i AMS math features
+\@mathmargin=\skip49
+
+For additional information on amsmath, use the `?' option.
+(c:/texlive/2020/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks18
+\ex@=\dimen140
+))
+(c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen141
+)
+(c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count189
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count190
+\leftroot@=\count191
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count192
+\DOTSCASE@=\count193
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box47
+\strutbox@=\box48
+\big@size=\dimen142
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count194
+\c@MaxMatrixCols=\count195
+\dotsspace@=\muskip16
+\c@parentequation=\count196
+\dspbrk@lvl=\count197
+\tag@help=\toks19
+\row@=\count198
+\column@=\count199
+\maxfields@=\count266
+\andhelp@=\toks20
+\eqnshift@=\dimen143
+\alignsep@=\dimen144
+\tagshift@=\dimen145
+\tagwidth@=\dimen146
+\totwidth@=\dimen147
+\lineht@=\dimen148
+\@envbody=\toks21
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2923.
+LaTeX Info: Redefining \] on input line 2924.
+)
+
+! LaTeX Error: File `kmath.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: 
+(c:/texlive/2020/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2020/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks23
+)
+(c:/texlive/2020/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2020/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(c:/texlive/2020/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+(c:/texlive/2020/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen149
+\Gin@req@width=\dimen150
+)
+(c:/texlive/2020/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count267
+\lst@gtempboxa=\box49
+\lst@token=\toks24
+\lst@length=\count268
+\lst@currlwidth=\dimen151
+\lst@column=\count269
+\lst@pos=\count270
+\lst@lostspace=\dimen152
+\lst@width=\dimen153
+\lst@newlines=\count271
+\lst@lineno=\count272
+\lst@maxwidth=\dimen154
+
+(c:/texlive/2020/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count273
+\lst@skipnumbers=\count274
+\lst@framebox=\box50
+)
+(c:/texlive/2020/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+
+(c:/texlive/2020/texmf-dist/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip52
+\subfigcapskip=\skip53
+\subfigcaptopadj=\dimen155
+\subfigbottomskip=\skip54
+\subfigcapmargin=\dimen156
+\subfiglabelskip=\skip55
+\c@subfigure=\count275
+\c@lofdepth=\count276
+\c@subtable=\count277
+\c@lotdepth=\count278
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(c:/texlive/2020/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip56
+\subfig@bottom=\skip57
+)
+(c:/texlive/2020/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(c:/texlive/2020/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(c:/texlive/2020/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+\Gm@cnth=\count279
+\Gm@cntv=\count280
+\c@Gm@tempcnt=\count281
+\Gm@bindingoffset=\dimen157
+\Gm@wd@mp=\dimen158
+\Gm@odd@mp=\dimen159
+\Gm@even@mp=\dimen160
+\Gm@layoutwidth=\dimen161
+\Gm@layoutheight=\dimen162
+\Gm@layouthoffset=\dimen163
+\Gm@layoutvoffset=\dimen164
+\Gm@dimlist=\toks25
+)
+(c:/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count282
+\l__pdf_internal_box=\box51
+)
+No file untitled-1.aux.
+\openout1 = `untitled-1.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for LUC/nanummj/m/n on input line 16.
+LaTeX Font Info:    Trying to load font information for LUC+nanummj on input li
+ne 16.
+(c:/texlive/2020/texmf-dist/tex/latex/nanumtype1/lucnanummj.fd
+File: lucnanummj.fd 2013/02/12 v0.1 Nanum Myeongjo font definitions
+)
+LaTeX Font Info:    ... okay on input line 16.
+
+(c:/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count283
+\scratchdimen=\dimen165
+\scratchbox=\box52
+\nofMPsegments=\count284
+\nofMParguments=\count285
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count286
+\MPscratchDim=\dimen166
+\MPnumerator=\count287
+\makeMPintoPDFobject=\count288
+\everyMPtoPDFconversion=\toks27
+) (c:/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(c:/texlive/2020/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+\c@lstlisting=\count289
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(73.97716pt, 449.55356pt, 73.97716pt)
+* v-part:(T,H,B)=(76.82243pt, 691.40198pt, 76.82243pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=449.55356pt
+* \textheight=691.40198pt
+* \oddsidemargin=1.70717pt
+* \evensidemargin=1.70717pt
+* \topmargin=-32.44756pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Font Info:    Trying to load font information for OML+cmr on input line 3
+7.
+(c:/texlive/2020/texmf-dist/tex/latex/base/omlcmr.fd
+File: omlcmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 37.
+
+Overfull \hbox (36.45139pt too wide) in paragraph at lines 37--38
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[1
+
+{c:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
+[
